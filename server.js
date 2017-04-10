@@ -10,14 +10,11 @@ var pot_message = "\nHi there! You should hack me.\n----------------------------
 
 aws.config.update({accessKeyId: "", secretAccessKey: ""});
 var s3 = new aws.S3();
-var S3_BUCKET = "atlantic-state-results";
+var S3_BUCKET = "s3_bucket_name";
 
 var hackAttempts = []
 
-
-console.log("Listening for hackers!")
 var server = net.createServer(function(socket){
-
   // Initialize per-connection username and password
   var username, password;
 
